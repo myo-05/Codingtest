@@ -9,8 +9,4 @@ checks = list(map(int,input().split())) # 확인 카드들
 
 cards = Counter(cards)
 
-for check in checks:
-    try:
-        print(cards[check],end=" ")
-    except:
-        print(0,end=" ")
+print(' '.join(str(cards[check]) if check in cards else '0' for check in checks))
