@@ -4,9 +4,7 @@ def solution(want, number, discount):
         want_table[w] = n
     possible_day = 0 # 할인가능 날짜
     N = len(discount) # 할인기간
-    # print("N",N)
     for s in range(N-10+1):
-        # print(s)
         membership = discount[s:s+10]# 10일간 할인목록
         discount_table = {}
         for i in membership:
