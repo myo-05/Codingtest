@@ -11,8 +11,8 @@ def solution(rows, columns, queries):
         x1, y1, x2, y2 = query
         min_value = float('inf') # 최솟값
         prev_value = matrix[x1-1][y1-1] # 처음값
-        # 윗줄 - 임시저장 후 적용 + 시계방향순으로 진행 + x,y를 index로 사용
-        for y in range(y1, y2):
+        # 윗줄 - 임시저장 후 적용 + 시계방향순으로 진행 #! (2) x,y를 좌표로 사용
+        for y in range(y1, y2): 
             current_value = matrix[x1-1][y]
             matrix[x1-1][y] = prev_value
             prev_value = current_value
@@ -39,5 +39,5 @@ def solution(rows, columns, queries):
             prev_value = current_value
             min_value = min(min_value, prev_value)
 
-        answer.append(min_value)
+        answer.append(min_value) #! (3)
     return answer
