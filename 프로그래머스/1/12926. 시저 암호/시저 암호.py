@@ -1,6 +1,4 @@
 def solution(s, n):
-    if n < 1 or n > 25:
-        return 0
     lower= 'abcdefghijklmnopqrstuvwxyz'
     upper = lower.upper()
     
