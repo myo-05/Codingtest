@@ -3,7 +3,6 @@ def solution(array, commands):
     # 2) list에서 k번째 수 추출
     # 3) 1~2 과정을 commands를 순회하며 수행하여 answer에 저장
     answer = []
-    for command in commands:
-        i,j,k = command
+    for i,j,k in commands:
         answer.append(sorted(array[i-1:j])[k-1]) # 1,2,3
     return answer
