@@ -10,8 +10,8 @@ The resulting table should have the machine_id along with the average time as pr
 Return the result table in any order.
 */
 # Write your MySQL query statement below
-select a1.machine_id , round(avg(end-start),3) as processing_time
+select machine_id , round(avg(end-start),3) as processing_time
 from (select machine_id, process_id, timestamp as start from Activity where activity_type ='start') a1
 join (select machine_id, process_id, timestamp as end from Activity where activity_type ='end') a2
-on a1.machine_id=a2.machine_id and a1.process_id =a2.process_id
+using(machine_id,process_id)
 group by 1
