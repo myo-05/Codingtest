@@ -4,7 +4,7 @@
 
 ### 성능 요약
 
-메모리: 9.27 MB, 시간: 0.06 ms
+메모리: 9.43 MB, 시간: 0.13 ms
 
 ### 구분
 
@@ -16,11 +16,11 @@
 
 ### 제출 일자
 
-2025년 03월 15일 00:49:59
+2025년 03월 15일 00:53:01
 
 ### 문제 설명
 
-<p style="background-color: transparent;">직사각형 형태의 그림 파일이 있고, 이 그림 파일은 1 × 1 크기의 정사각형 크기의 픽셀로 이루어져 있습니다. 이 그림 파일을 나타낸 문자열 배열 <code style="background-color: transparent;">picture</code>과 정수 <code>k</code>가 매개변수로 주어질 때, 이 그림 파일을 가로 세로로 <code>k</code>배 늘린 그림 파일을 나타내도록 문자열 배열을 return 하는 solution 함수를 작성해 주세요.</p>
+<p>직사각형 형태의 그림 파일이 있고, 이 그림 파일은 1 × 1 크기의 정사각형 크기의 픽셀로 이루어져 있습니다. 이 그림 파일을 나타낸 문자열 배열 <code>picture</code>과 정수 <code>k</code>가 매개변수로 주어질 때, 이 그림 파일을 가로 세로로 <code>k</code>배 늘린 그림 파일을 나타내도록 문자열 배열을 return 하는 solution 함수를 작성해 주세요.</p>
 
 <hr>
 
@@ -62,7 +62,7 @@
 
 <p>입출력 예 #1</p>
 
-<ul style="background-color: transparent;">
+<ul>
 <li><p>예제 1번의 <code>picture</code>는 다음과 같습니다.</p>
 <div class="highlight"><pre class="codehilite"><code>.xx...xx.
 x..x.x..x
