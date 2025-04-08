@@ -1,2 +1,2 @@
 def solution(num, k):
-    return ('a'+str(num)).find(str(k))
+    return (' '+str(num)).find(str(k))
